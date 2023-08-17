@@ -1,0 +1,192 @@
+.superior {
+  margin-top: 40px;
+  height: 330px;
+  width: 400px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(66, 78, 76);
+  border-right: 10px solid rgb(5, 28, 44);
+}
+.izq {
+  list-style: none;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+}
+.dere {
+  list-style: none;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+}
+.contenedor {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+}
+.titulo {
+  justify-content: center;
+  display: flex;
+}
+.lista {
+  display: flex;
+}
+.particion {
+  display: flex;
+  margin-left: 6px;
+}
+input {
+  margin: 5px;
+}
+.bus {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(to right, rgb(5, 28, 44), rgb(39, 150, 124));
+  color: aliceblue;
+  padding: 0%;
+  margin: 0%;
+}
+.botoncrear {
+  margin-top: 10px;
+}
+.boton1 {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px 165px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  background-color: rgb(5, 28, 44);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-left: 15px;
+}
+.boton1:hover {
+  background-color: rgb(39, 150, 124);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+input::placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+input::placeholder {
+  color: #999;
+}
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center; 
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin: 0 15px;
+}
+.boton {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border: none; 
+  position: relative; 
+  transition: color 0.3s; 
+}
+.boton::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 100%;
+  height: 3px; 
+  background-color: transparent; 
+  transition: background-color 0.3s; 
+}
+.boton:hover::after {
+  background-color: rgb(5, 28, 44); 
+}
+.botonbuscar {
+  font-family: 'Raleway', sans-serif;
+  padding: 9px 10px;
+  justify-content: center;
+  font-size: 16px;
+  background-color: rgb(5, 28, 44);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-left: -5px;
+}
+.botonbuscar:hover {
+  background-color: rgb(39, 150, 124);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.busc {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+.emergente {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#resultadoBusqueda {
+  background-color: rgb(66, 78, 76);
+  height: 450px;
+  margin-bottom: 30px;
+  border-right: 10px solid rgb(5, 28, 44);
+}
+.modi {
+  font-family: 'Raleway', sans-serif;
+  padding: 9px 10px;
+  justify-content: center;
+  font-size: 16px;
+  background-color: rgb(5, 28, 44);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.modi:hover {
+  background-color: rgb(39, 150, 124);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.eli {
+  font-family: 'Raleway', sans-serif;
+  padding: 9px 10px;
+  justify-content: center;
+  font-size: 16px;
+  background-color: rgb(5, 28, 44);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin: 30px;
+}
+.eli:hover {
+  background-color: rgb(39, 150, 124);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.contrac {
+  margin-left: 60px;
+  margin-top: -10px;
+}
+.botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

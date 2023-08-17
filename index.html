@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png"
+        href="https://png.pngtree.com/element_our/20190529/ourmid/pngtree-stylish-luxury-car-simulation-car-illustration-image_1191573.jpg">
+
+    <title>Registro de Vehiculos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="boton" onclick="miobjeto.mostrarCrear()">Crear</a></li>
+                <li><a href="#" class="boton" onclick="miobjeto.mostrarBuscar()">Buscar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <form>
+            <div class="contenedor">
+                <div class="superior" id="crearContenedor" style="display: none;">
+                    <h3 class="titulo">Ingreso de vehiculos</h3>
+                    <div class="particion">
+                        <div class="izq">
+                            <div>
+                                <label> Codigo </label>
+                                <input type="text" placeholder="Codigo" id="cod">
+                            </div>
+                            <div>
+                                <label> Marca </label>
+                                <input type="text" placeholder="Marca" id="marca">
+                            </div>
+                            <div>
+                                <label> Modelo </label>
+                                <input type="text" placeholder="Modelo" id="modelo">
+                            </div>
+                            <div>
+                                <label> Año </label>
+                                <input type="text" placeholder="Año" id="año">
+                            </div>
+                        </div>
+                        <div class="dere">
+                            <div>
+                                <label> Color </label>
+                                <input type="text" placeholder="Color" id="color">
+                            </div>
+                            <div>
+                                <label> Cilindraje </label>
+                                <input type="text" placeholder="Cilindraje" id="cilindraje">
+                            </div>
+                            <div>
+                                <label> Motor </label>
+                                <input type="text" placeholder="Motor" id="motor">
+                            </div>
+                            <div>
+                                <label> Tipo de vehiculo </label>
+                                <select id="selec">
+                                    <option value disabled selected>Selecciona una opción</option>
+                                    <option value="auto">Auto</option>
+                                    <option value="moto">Moto</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botoncrear">
+                        <button class="boton1" type="button" onclick="miobjeto.crear()">Crear</button>
+                    </div>
+                </div>
+                <div class="emergente">
+                    <div class="inferior" id="buscarContenedor" style="display: none;">
+                        <ul class="bus">
+                            <li>
+                                <input class="busc" type="text" placeholder="Buscar" id="buscar">
+                                <button class="botonbuscar" type="button" onclick="miobjeto.buscar()">Buscar</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="resultadoBusqueda" style="display: none;">
+                        <h3 class="titulo">Detalles del Vehículo</h3>
+                        <div class="particion">
+                            <div class="izq">
+                                <div>
+                                    <label> Codigo </label>
+                                    <input type="text" placeholder="codigo" id="detalle-cod">
+                                </div>
+                                <div>
+                                    <label> Marca </label>
+                                    <input type="text" placeholder="marca" id="detalle-marca">
+                                </div>
+                                <div>
+                                    <label> Modelo </label>
+                                    <input type="text" placeholder="Modelo" id="detalle-modelo">
+                                </div>
+                                <div>
+                                    <label> Año </label>
+                                    <input type="text" placeholder="Año" id="detalle-año">
+                                </div>
+                                <div>
+                                    <label> Color </label>
+                                    <input type="text" placeholder="color" id="detalle-color">
+                                </div>
+                                <div>
+                                    <label> Cilindraje </label>
+                                    <input type="text" placeholder="Cilindraje" id="detalle-cilindraje">
+                                </div>
+                                <div>
+                                    <label> Motor </label>
+                                    <input type="text" placeholder="Motor" id="detalle-motor">
+                                </div>
+                                <div>
+                                    <label> Tipo de Vehiculo </label>
+                                    <input type="text" placeholder="Tipo" id="detalle-tipo" disabled>
+                                </div>
+                                <div class="botones">
+                                    <button class="modi" type="button"
+                                        onclick="miobjeto.modificarVehiculo()">Modificar</button>
+                                    <button class="eli" type="button"
+                                        onclick="miobjeto.eliminarVehiculo()">Eliminar</button>
+
+                                </div>
+                                <div class="contrac">
+                                    <input class="contr" type="password" id="password" placeholder="Contraseña maestra">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
